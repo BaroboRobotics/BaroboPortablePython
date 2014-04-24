@@ -23,7 +23,7 @@
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 set PY_VERSION=3.2
-set PP_VERSION=5.1
+set PP_VERSION=0.1
 set PY_SHORT_VERSION=32
 
 :: Modules
@@ -69,6 +69,10 @@ set LXML_FILE=lxml-2.3.win32-py3.2.exe
 set PY_SERIAL_DOWNLOAD="http://pypi.python.org/packages/any/p/pyserial/pyserial-py3k-2.5.win32.exe"
 set PY_SERIAL_FILE=pyserial-py3k-2.5.win32.exe
 set PY_SERIAL_MD5=c7d770dede6f6c6197d9652a7658f18e
+
+set PY_BAROBO_DOWNLOAD="http://pypi.python.org/packages/any/P/PyBarobo/PyBarobo-0.1.11.win32.exe"
+set PY_BAROBO_FILE=PyBarobo-0.1.11.win32.exe
+set PY_BAROBO_MD5=5f7b14bfe4271f1e664cb5b1c5bffb39
 
 set PYODBC_DOWNLOAD="http://pyodbc.googlecode.com/files/pyodbc-3.0.2.win32-py3.2.exe"
 set PYODBC_FILE=pyodbc-3.0.2.win32-py3.2.exe

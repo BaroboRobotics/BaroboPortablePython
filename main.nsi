@@ -32,10 +32,11 @@
 
 !define WEBSITE "PortablePython.com"
 !define VERSION "${PY_VERSION}.${PP_VERSION}"
-!define APPNAME "Portable Python ${VERSION}"
-!define OUTFILENAME "PortablePython_${VERSION}.exe"
+!define APPNAME "Portable Python (Barobo Edition) ${VERSION}"
+!define OUTFILENAME "PortablePython_BaroboEdition_${VERSION}.exe"
 !define OUTFOLDER "${OUTPUT_FOLDER}"
 !define SOURCESFOLDER "${SOURCES_FOLDER}"
+!finalize '"C:/Program Files/Microsoft SDKs/Windows/v7.0A/bin/signtool.exe" sign "${OUTFOLDER}\${OUTFILENAME}"'
 
 ;=== Program Details
 Name "${APPNAME}"
@@ -78,6 +79,14 @@ SetDatablockOptimize On
 !insertmacro MUI_PAGE_WELCOME
 ; Directory page
 !insertmacro MUI_PAGE_DIRECTORY
+!ifdef REG_START_MENU
+!define MUI_STARTMENUPAGE_NODISABLE
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "BaroboLink"
+!define MUI_STARTMENUPAGE_REGISTRY_ROOT "${REG_ROOT}"
+!define MUI_STARTMENUPAGE_REGISTRY_KEY "${UNINSTALL_PATH}"
+!define MUI_STARTMENUPAGE_REGISTRY_VALUENAME "${REG_START_MENU}"
+!insertmacro MUI_PAGE_STARTMENU Application $SM_Folder
+!endif
 ; Components page 
 !insertmacro MUI_PAGE_COMPONENTS
 ; Instfiles page
@@ -97,3 +106,7 @@ SetDatablockOptimize On
 ; Include modules file for the selected version
 !include modules.nsh
 !include descriptions.nsh
+
+Section -Icons_Reg
+
+SectionEnd

@@ -70,6 +70,11 @@ SectionGroup "Modules"
 		SetOutPath "$INSTDIR\App\Lib\site-packages\"
 		File /r "${SOURCESFOLDER}\pyserial\PURELIB\*.*"
 	SectionEnd
+	Section "PyBarobo 0.1.8" MODULE_PY_BAROBO
+		SectionIn 1
+		SetOutPath "$INSTDIR\App\Lib\site-packages\"
+		File /r "${SOURCESFOLDER}\pybarobo\PURELIB\*.*"
+	SectionEnd
 	Section "PyODBC 3.0.2" MODULE_PYODBC
 		SectionIn 1
 		SetOutPath "$INSTDIR\App\Lib\site-packages\"

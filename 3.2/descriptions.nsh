@@ -31,6 +31,7 @@ LangString DESC_IDE_PYSCRIPTER ${LANG_ENGLISH} "PyScripter is a free and open-so
 LangString DESC_MODULE_PYWIN32 ${LANG_ENGLISH} "Python Extensions for Windows."
 LangString DESC_MODULE_NETWORKX ${LANG_ENGLISH} "Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks."
 LangString DESC_MODULE_PY_SERIAL ${LANG_ENGLISH} "This module encapsulates the access for the serial port."
+LangString DESC_MODULE_PY_BAROBO ${LANG_ENGLISH} "This module is used to control Barobo robots."
 LangString DESC_MODULE_NUMPY ${LANG_ENGLISH} "NumPy is the fundamental package needed for scientific computing with Python."
 LangString DESC_MODULE_SCIPY ${LANG_ENGLISH} "SciPy is open-source software for mathematics, science, and engineering"
 LangString DESC_MODULE_MATPLOTLIB ${LANG_ENGLISH} "2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms"
@@ -47,6 +48,7 @@ LangString DESC_MODULE_PANDAS ${LANG_ENGLISH} "Pandas is a Python package provid
   !insertmacro MUI_DESCRIPTION_TEXT ${MODULE_PYWIN32} $(DESC_MODULE_PYWIN32)
   !insertmacro MUI_DESCRIPTION_TEXT ${MODULE_NETWORKX} $(DESC_MODULE_NETWORKX)
   !insertmacro MUI_DESCRIPTION_TEXT ${MODULE_PY_SERIAL} $(DESC_MODULE_PY_SERIAL)
+  !insertmacro MUI_DESCRIPTION_TEXT ${MODULE_PY_BAROBO} $(DESC_MODULE_PY_BAROBO)
   !insertmacro MUI_DESCRIPTION_TEXT ${MODULE_NUMPY} $(DESC_MODULE_NUMPY)
   !insertmacro MUI_DESCRIPTION_TEXT ${MODULE_SCIPY} $(DESC_MODULE_SCIPY)
   !insertmacro MUI_DESCRIPTION_TEXT ${MODULE_MATPLOTLIB} $(DESC_MODULE_MATPLOTLIB)

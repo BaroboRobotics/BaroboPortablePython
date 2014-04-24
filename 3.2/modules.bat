@@ -34,6 +34,7 @@ call :UnpackNetworkX
 call :UnpackMatplotlib
 call :UnpackLXML
 call :UnpackPySerial
+call :UnpackPyBarobo
 call :UnpackPyODBC
 call :UnpackPyQT
 call :UnpackIPython
@@ -329,6 +330,31 @@ tools\uniextract16\UniExtract.exe "%BIN_FOLDER%\%PY_SERIAL_FILE%" %UNPACK_FOLDER
 
 :: Fix
 call COMMON :FixMSCRT %UNPACK_FOLDER%\pyserial\
+
+endlocal&goto :EOF
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:UnpackPyBarobo
+::
+:: By:   David Ko
+:: Func: Downloads and extracts PyBarobo
+:: Args: none
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+setlocal ENABLEEXTENSIONS
+
+:: Download 
+call COMMON :DownloadFile %PY_BAROBO_DOWNLOAD% %PY_BAROBO_FILE%
+
+:: Verify 
+call COMMON :VerifyFile %PY_BAROBO_FILE% MD5 %PY_BAROBO_MD5%
+        
+:: Unpack files
+call COMMON :LogMessage "Extracting PyBarobo files"
+tools\uniextract16\UniExtract.exe "%BIN_FOLDER%\%PY_BAROBO_FILE%" %UNPACK_FOLDER%\pybarobo\ >NUL
+
+:: Fix
+call COMMON :FixMSCRT %UNPACK_FOLDER%\pybarobo\
 
 endlocal&goto :EOF
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

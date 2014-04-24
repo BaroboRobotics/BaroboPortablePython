@@ -1,5 +1,3 @@
-// Unicode support by Jim Park -- 08/02/2007
-
 #include <windows.h>
 #include <nsis/pluginapi.h> // nsis plugin
 
@@ -36,7 +34,7 @@ void __declspec(dllexport) myFunction(HWND hwndParent, int string_size,
 
 
 
-BOOL WINAPI DllMain(HANDLE hInst, ULONG ul_reason_for_call, LPVOID lpReserved)
+BOOL WINAPI DllMain(HINSTANCE hInst, ULONG ul_reason_for_call, LPVOID lpReserved)
 {
   g_hInstance=hInst;
 	return TRUE;
