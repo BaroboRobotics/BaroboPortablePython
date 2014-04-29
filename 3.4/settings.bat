@@ -22,20 +22,14 @@
 :: http://PortablePython.com
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-set PY_VERSION=3.2
+set PY_VERSION=3.4
 set PP_VERSION=0.2
-set PY_SHORT_VERSION=32
+set PY_SHORT_VERSION=34
 
 :: Modules
-set PY_MSI_DOWNLOAD="http://python.org/ftp/python/3.2.5/python-3.2.5.msi"
-set PY_MSI_FILE=python-3.2.5.msi
-set PY_MSI_MD5=cdd6fdc59461c968bd105fdf08f4a17d
-
-set PY_DISTRIBUTE_VERSION=distribute-0.6.34
-set PY_DISTRIBUTE_DOWNLOAD="http://pypi.python.org/packages/source/d/distribute/%PY_DISTRIBUTE_VERSION%.tar.gz"
-set PY_DISTRIBUTE_TAR=%PY_DISTRIBUTE_VERSION%.tar
-set PY_DISTRIBUTE_FILE=%PY_DISTRIBUTE_VERSION%.tar.gz
-set PY_DISTRIBUTE_MD5=4576ab843a6db5100fb22a72deadf56d
+set PY_MSI_DOWNLOAD="https://www.python.org/ftp/python/3.4.0/python-3.4.0.msi"
+set PY_MSI_FILE=python-3.4.0.msi
+set PY_MSI_MD5=e3be8a63294e42e126493ca96cfe48bd
 
 set PY_SETUPTOOLS_VERSION=setuptools-3.4.4
 set PY_SETUPTOOLS_DOWNLOAD="https://pypi.python.org/packages/source/s/setuptools/%PY_SETUPTOOLS_VERSION%.tar.gz"
