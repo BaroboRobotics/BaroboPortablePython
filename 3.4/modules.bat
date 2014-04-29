@@ -541,7 +541,7 @@ del %filein%
 
 :: Build Shortcut
 call COMMON :LogMessage "Build PyCharm shortcut"
-tools\nsis\makensis.exe /V0 /DSHORTCUTNAME=PyCharm /DPY_VERSION=%PY_VERSION% /DPP_VERSION=%PP_VERSION% shortcuts\shortcut.nsi
+tools\nsis\makensis.exe /V0 /DSHORTCUTNAME=PyCharm /DPY_VERSION=%PY_VERSION% /DPP_VERSION=%PP_VERSION% /DPY_SHORT_VERSION=%PY_SHORT_VERSION% shortcuts\shortcut.nsi
 
 :: Copy shortcuts
 call COMMON :LogMessage "Copy PyCharm shortcut"
