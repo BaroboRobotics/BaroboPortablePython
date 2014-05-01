@@ -23,7 +23,7 @@
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 set PY_VERSION=3.2
-set PP_VERSION=0.2
+set PP_VERSION=0.3
 set PY_SHORT_VERSION=32
 
 :: Modules
