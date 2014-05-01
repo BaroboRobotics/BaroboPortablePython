@@ -26,7 +26,7 @@
 InstType "Full"
 InstType "Minimal"
 
-Section "!Python 3.2.5 core" PYTHON_CORE
+Section "!Python 3.4.0 core" PYTHON_CORE
 	SectionIn 1 2 RO
 	SetOutPath "$INSTDIR"
 	File /r "${SOURCESFOLDER}\python-core\*.*"
@@ -70,7 +70,7 @@ SectionGroup "Modules"
 		SetOutPath "$INSTDIR\App\Lib\site-packages\"
 		File /r "${SOURCESFOLDER}\pyserial\PURELIB\*.*"
 	SectionEnd
-	Section "PyBarobo 0.1.15" MODULE_PY_BAROBO
+	Section "PyBarobo 0.1.12" MODULE_PY_BAROBO
 		SectionIn 1
 		SetOutPath "$INSTDIR\App\Lib\site-packages\"
 		File /r "${SOURCESFOLDER}\pybarobo\PURELIB\*.*"
@@ -110,12 +110,12 @@ SectionGroup "Code editors"
 		File /r "${SOURCESFOLDER}\PyScripter\*.*"
 		File "${SOURCESFOLDER}\PyScripter-Portable.exe"
 	SectionEnd
-	Section "PyCharm Community 3.1.2" IDE_PYCHARM
-		SectionIn 1
-		SetOutPath "$INSTDIR"
-		File /r "${SOURCESFOLDER}\PyCharm\*.*"
-		File "${SOURCESFOLDER}\PyCharm-Portable.exe"
-	SectionEnd	
+;	Section "PyCharm Community 3.1.2" IDE_PYCHARM
+;		SectionIn 1
+;		SetOutPath "$INSTDIR"
+;		File /r "${SOURCESFOLDER}\PyCharm\*.*"
+;		File "${SOURCESFOLDER}\PyCharm-Portable.exe"
+;	SectionEnd	
 SectionGroupEnd
 
 
