@@ -27,7 +27,7 @@ set COMMON=.\..\common.bat
 
 call :UnpackPython
 call :UnpackPyScripter
-call :UnpackPyCharm
+:: call :UnpackPyCharm
 call :UnpackNumPy
 call :UnpackSciPy
 call :UnpackPyWin32
