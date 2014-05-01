@@ -80,7 +80,7 @@ Icon "${SHORTCUTNAME}.ico"
 Section "Main"
 	Call CheckDirExe
 
-	Call SplashLogo
+	;Call SplashLogo
 	Call Launch
 SectionEnd
 
